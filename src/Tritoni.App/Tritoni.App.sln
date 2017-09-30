@@ -7,6 +7,13 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Tritoni.App", "Tritoni.App\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tritoni.App.UWP", "Tritoni.App\Tritoni.App.UWP\Tritoni.App.UWP.csproj", "{D200179B-AAF8-435A-BD6B-3B1452BF3A58}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{1FC086DB-1956-446D-B9C6-C07AB85BCC46}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\.gitattributes = ..\..\.gitattributes
+		..\..\.gitignore = ..\..\.gitignore
+		..\..\readme.md = ..\..\readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Tritoni.App\Tritoni.App\Tritoni.App.projitems*{00ca21ab-a0ea-42bd-96f2-f781e3669915}*SharedItemsImports = 13
