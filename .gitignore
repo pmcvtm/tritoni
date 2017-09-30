@@ -1,0 +1,10 @@
+bin/
+obj/
+build
+
+.vs/
+*.suo
+
+packages
+*.nuget.props
+*.nuget.targets
