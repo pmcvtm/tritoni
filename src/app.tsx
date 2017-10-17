@@ -1,10 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+import { Header } from './header';
+
 ReactDOM.render(
 <div id="body">
 
-<h1>Hello World!</h1>
+<Header name='Tritoni' />
 {/* All of the Node.js APIs are available in this renderer process. */}
 <p>
     We are using Node.js {process.versions.node},
