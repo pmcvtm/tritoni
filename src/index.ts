@@ -1,11 +1,11 @@
-const electron = require('electron')
-const app = electron.app
-const BrowserWindow = electron.BrowserWindow
+import {app, BrowserWindow} from 'electron';
 
-const path = require('path')
-const url = require('url')
+import * as path from 'path';
+import * as url from 'url';
 
-let mainWindow
+import './index.html';
+
+let mainWindow:BrowserWindow
 
 function createWindow () {
   mainWindow = new BrowserWindow({width: 800, height: 600})
