@@ -9,8 +9,12 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/react": "16.0.13",
+    "@types/react-dom": "16.0.1",
     "electron": "1.7.9",
     "file-loader": "1.1.5",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
     "source-map-loader": "0.2.2",
     "ts-loader": "3.0.2",
     "typescript": "2.5.3",

@@ -3,6 +3,7 @@ module.exports = {
 
     entry: {
         index: './src/index.ts',
+        app: './src/app.tsx',
         renderer: './src/renderer.ts'
     },
 
@@ -17,13 +18,13 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['webpack.js', '.web.js', '.ts', '.js', '.html']
+        extensions: ['webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx', '.html']
     },
 
     module: {
         rules: [
             { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
-            { test: /\.ts$/, loader: 'ts-loader' },
+            { test: /\.tsx?$/, loader: 'ts-loader' },
             { test: /\index.html$/, loader: 'file-loader?name=index.html'}
         ]
     }
