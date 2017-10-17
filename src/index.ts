@@ -1,38 +1,38 @@
 import {app, BrowserWindow} from 'electron';
 
-import * as path from 'path';
-import * as url from 'url';
+import * as Path from 'path';
+import * as Url from 'url';
 
 import './index.html';
 
-let mainWindow:BrowserWindow
+let mainWindow:BrowserWindow;
 
-function createWindow () {
+let createWindow = () => {
   mainWindow = new BrowserWindow({width: 800, height: 600})
 
-  mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+  mainWindow.loadURL(Url.format({
+    pathname: Path.join(__dirname, 'index.html'),
     protocol: 'file:',
     slashes: true
-  }))
+  }));
 
   // mainWindow.webContents.openDevTools()
 
-  mainWindow.on('closed', function () {
-    mainWindow = null
+  mainWindow.on('closed', () => {
+    mainWindow = null;
   })
 }
 
-app.on('ready', createWindow)
+app.on('ready', createWindow);
 
-app.on('window-all-closed', function () {
+app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
-    app.quit()
+    app.quit();
   }
 })
 
-app.on('activate', function () {
+app.on('activate', () => {
   if (mainWindow === null) {
-    createWindow()
+    createWindow();
   }
 })
