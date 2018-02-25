@@ -1,7 +1,10 @@
 {
   "name": "tritoni",
   "version": "0.0.0",
+  "productName": "Tritoni",
+  "author": "Loud & Abrasive & Co.",
   "description": "intelligent music library for collectors",
+  "private": true,  
   "main": "index.js",
   "scripts": {
     "start": "webpack && electron dist",
@@ -25,6 +28,5 @@
     "type": "git",
     "url": "https://github.com/pmcvtm/tritoni"
   },
-  "author": "Patrick McVeety-Mill",
   "license": "ISC"
 }
