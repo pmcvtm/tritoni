@@ -4,21 +4,28 @@
   "description": "intelligent music library for collectors",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && electron dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/react": "^16.7.21",
+    "@types/react-dom": "^16.0.11",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "source-map-support": "^0.5.10"
+  },
   "devDependencies": {
-    "@types/react": "16.0.13",
-    "@types/react-dom": "16.0.1",
-    "electron": "1.7.9",
-    "file-loader": "1.1.5",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
-    "source-map-loader": "0.2.2",
-    "ts-loader": "3.0.2",
-    "typescript": "2.5.3",
-    "webpack": "3.7.1"
+    "@babel/preset-react": "^7.0.0",
+    "electron": "4.0.1",
+    "electron-builder": "20.38.4",
+    "electron-webpack": "^2.6.2",
+    "electron-webpack-ts": "^3.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.2.4",
+    "webpack": "4.28.4"
   },
   "repository": {
     "type": "git",
