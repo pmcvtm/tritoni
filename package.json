@@ -22,6 +22,8 @@
     "electron-builder": "20.38.4",
     "electron-webpack": "^2.6.2",
     "electron-webpack-ts": "^3.1.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
     "typescript": "^3.2.4",
     "webpack": "4.28.4"
   },
